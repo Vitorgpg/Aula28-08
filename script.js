@@ -64,3 +64,11 @@ var valorSaldo = 0;
 var valorDeposito = parseFloat(prompt("Digite valor a ser depositado"));
 var valorsacado = parseFloat(prompt("Qual valor a ser sacado ? "));
 
+var saldofinal = valorSaldo + valorDeposito;
+
+if (valorsacado <= saldofinal) {
+    console.log("Você tem: " + saldofinal + "." + "É possivel sacar!");
+} else {
+    console.log("Você tem: " + saldofinal + "." + "Não é possível sacar!");
+    
+}
